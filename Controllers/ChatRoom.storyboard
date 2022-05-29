@@ -49,7 +49,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="IvT-t4-ygL"/>
                     <connections>
-                        <outlet property="chatRoomTavleView" destination="9sy-sw-A8H" id="Pjk-GS-UnQ"/>
+                        <outlet property="chatRoomTableView" destination="9sy-sw-A8H" id="Pjk-GS-UnQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

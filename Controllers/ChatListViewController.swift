@@ -12,7 +12,7 @@ class ChatListViewController:UIViewController{
         super.viewDidLoad()
         chatListTableView.delegate = self
         chatListTableView.dataSource = self
-   //ios15overのナビゲーションバーの色を従来の方法で変更できる様にするためのコード
+   //ios15overのナビゲーションバー色を以前の方法で変更できる様にするコード
         if #available(iOS 15.0, *) {
             let appearance = UINavigationBarAppearance()
             appearance.configureWithOpaqueBackground()
@@ -22,6 +22,9 @@ class ChatListViewController:UIViewController{
             appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
             self.navigationController?.navigationBar.standardAppearance = appearance
             self.navigationController?.navigationBar.scrollEdgeAppearance = appearance
+            let storyboard = UIStoryboard.init(name: "SiggnUp", bundle: nil)
+            let signUpViewController = storyboard.instantiateViewController(withIdentifier: "signUpViewController") as! SignUpViewController
+            self.present(signUpViewController, animated: true, completion: nil)
         }}}
 extension ChatListViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

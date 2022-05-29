@@ -54,7 +54,7 @@
                 <constraint firstItem="fkf-CH-yXl" firstAttribute="centerY" secondItem="Kah-F1-Gj0" secondAttribute="centerY" id="z0g-Hx-i7a"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="176.81159420289856" y="-160.71428571428569"/>
+            <point key="canvasLocation" x="228.98550724637684" y="-183.48214285714286"/>
         </view>
     </objects>
     <resources>
